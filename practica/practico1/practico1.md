@@ -277,3 +277,10 @@
 > Sobre singleton: https://www.digitalocean.com/community/tutorials/java-singleton-design-pattern-best-practices-examples
 
 > Sobre la generación del JAR: https://platzi.com/blog/como-crear-un-archivo-jar-en-intellij/
+
+## Sobre el JAR
+Hice el JAR mediante la IDE IntelliJ pero al acceder a él se me generó una excepción. Con el siguiente comando de ejemplo me funcionó para que se muestre en terminal: 
+```bash
+C:\Users\Usuario\IdeaProjects\labo-tp2> java -jar ./out/artifacts/labo_tp2_jar/labo-tp2.jar
+Hola mundo!
+```
