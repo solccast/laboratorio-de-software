@@ -69,5 +69,29 @@ Para su solución, defina un Adapter llamado IteratorStringAdapter como una clas
 Este ejercicio me dio más dudas que certezas xd No mucho más que decir. 
 
 
+4. Indicar si son verdaderas o falsas las siguientes afirmaciones sobre las **clases anónimas** y en cada caso justifique su respuesta. 
+[F] **Se pueden instanciar más del punto en donde fueron declaradas.** -> El constructor de un objeto usa su nombre, al ser anónima no es posible instanciarlo.
+[V] **Uno de los usos más comunes de este tipo de clases es la creación de objetos función y procesos _on the fly_.** -> Estas clases se crean para poder crear instancias rápidas de clases como funciones callback lo cuales no son necesario definir una clase completa. 
+[F] **Se pueden utilizar el `instanceof` siempre y cuando la interfaz de la que deriva la clase anónima sea de tipo `marker`.** -> Se puede usar independiente de la interfaz que sea de tipo marker o no. 
+[F] **No se puede implementar múltiples interfaces o extender clases e implementar interfaces al mismo tiempo** -> La clase anónima o extiende una clase o implementa una interfaz. No soporta “extender + implementar” a la vez ni varias interfaces en la misma expresión.
+
+
+5. Modifique el código de la clase `Stack` para que ahora la clase anidada `StackIterator`, se convierta en una clase anónima. 
+a. ¿En qué situación es conveniente definir a una clase como anónima?
+Es conveniente usarlo cuando se tiene que implementar una sola vez una clase abstracta o interfaz, la implementación no es extensa y es específica. 
+b. Si tendría que inicializar valores de la clase anónima (cuando se crea una instancia de la misma), ¿cómo la haría? 
+Se puede hacer uso del bloque de inicialización. 
+Por ejemplo:
+```java
+return new Figura(){
+    private double area;
+    private String color;
+    { //Bloque de inicialización
+            area = 10;
+            color = "azul";
+    }
+    //métodos
+}
+```
 
 
