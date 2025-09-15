@@ -120,5 +120,7 @@ e. Implemente el patrón de diseño Singleton mediante un tipo Enumerativo el cu
 # Anexo: cosas de interés y links 
 Funcionamiento del compareTo: https://www.geeksforgeeks.org/java/how-compare-method-works-in-java/
 Documentación de Arrays: https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#sort-T:A-java.util.Comparator-
+Sobre enums: https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+Documentación sober enums: https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html
 
 
