@@ -57,7 +57,7 @@ public class LinkedList<E> ...{
 ## ¿Qué problemas resuelven los genéricos?
 Se evitan los errores en ejecución causados por el uso de casting. 
 - Provee seguridad en compilación pudiendo detectar errores en compilación. 
-Los **tipos parametrizados con comodines** el cual es una construcción sintáctica "?" que denota un conjunto de algún tipo desconocido. Se usan generalmente como **sólo lectura** ya que se castea como instancias de Object. 
+Los **tipos parametrizados con comodines** el cual es una construcción sintáctica "?" que denota un conjunto de algún tipo desconocido. Se .usan generalmente como **sólo lectura** ya que se castea como instancias de Object. 
 
 ```java
 public void prueba(Set<?> s1, Set<?> s2) { //---> solo lectura
