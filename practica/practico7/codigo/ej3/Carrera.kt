@@ -8,9 +8,9 @@ var ganador: String = ""
 var hayGanador: Boolean = false
 val lock = Any()
 
-class Participante(val name: String, var actual: Int = 0){
+class Participante(val name: String, var actual: Int = 0){ //Otra forma es que esta clase implemente Runnable
 
-    fun run() {
+    fun correr() {
         while (actual < objetivo){
             actual++
             println("${this.name}: Actualmente en el metro: ${actual}")
@@ -35,9 +35,10 @@ fun main(args: Array<String>) {
 
     val participantes: Array<Participante> = arrayOf(p1, p2, p3, p4, p5)
     for (p in participantes){
-        executor.execute { p.run() }
+        executor.execute { p.correr() } // lo que siempre recibe el execute es un runnable
     }
     executor.shutdown()
+
     executor.awaitTermination(1, TimeUnit.MINUTES) // esperar a que terminen
 
     println("GANADOR: ${ganador}")

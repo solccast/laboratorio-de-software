@@ -10,6 +10,7 @@ class Reloj {
 
 fun main(args: Array<String>) {
     val executor = Executors.newSingleThreadExecutor()
+
     val future= executor.submit {
         for (i in 1..30) {
             println("Tiempo actual es: ${LocalTime.now()}")
@@ -36,5 +37,8 @@ fun main(args: Array<String>) {
     executorSchedule.shutdown()
     println("Off")
 
+    /*
+
+     */
 
 }

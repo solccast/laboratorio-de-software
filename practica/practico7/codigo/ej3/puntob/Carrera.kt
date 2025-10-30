@@ -54,9 +54,14 @@ fun main(args: Array<String>) {
     for (f in futuros){
         try {
             println(f.get())
-        } catch (e: ExecutionException){
+        } catch (e0: ExecutionException){
+            println("atrapado") //La excepcio´n se enmascara por eso nunca toma el catch de AbandonoException
+        } catch (e: AbandonoException){
             println("Ups: ${e.message}")
+        } catch (e2: Exception){
+            println("asdfsfs")
         }
+
     }
 
     println("GANADOR: ${ganador}")
