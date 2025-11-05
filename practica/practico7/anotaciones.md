@@ -36,3 +36,7 @@ La anotación `@synchronized` se puede aplicar a una función o método. Funcion
     - Devuelve un `Future<T>`, un objeto que representa la tarea en ejecución y su posible resultado.
     - Si la tarea falla, la excepción queda guardada dentro del Future y podés consultarla con `future.get()`.
 
+
+## Sobre Runnable y Callable
+- **Runnable**: interafaz funcional con un único método `run()`. No devuelve resultado. No lanza excepciones comprobadas. 
+- **Callable<T>**: interfaz funcional con un único método `call()` que devuelve un resultado. Puede lanzar excepciones. 
